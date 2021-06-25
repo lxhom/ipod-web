@@ -68,7 +68,6 @@
         left: 5px;
         right: 5px;
         height: 16%;
-        border-bottom: 2px solid var(--screen-dark);
     }
 
     .title-container {
@@ -125,48 +124,75 @@
     .menu-options {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: flex-start;
         position: relative;
         top: 17%;
         height: 81%;
-        padding-left: 12px;
+        border-top: 2px solid var(--screen-dark);
+        padding-top: 3px;
     }
+
+    .option {
+        padding-left: 14px;
+        transition: background-color 100ms, color 100ms;
+        padding-bottom: 2px;
+    }
+
+    .option.selected {
+        background-color: var(--screen-dark);
+        color: var(--screen-light);
+    }
+
 </style>
+
+<script>
+    import Clickwheel from "./Clickwheel.svelte"
+    let itemsStore = null, isDefault = true;
+    let items = ["Playlists", "Artists", "Songs", "Settings", "About", "Now Playing"]
+    let selected = 3;
+    let playing = false;
+    let handleWheel = e => {
+      navigator.vibrate([15])
+      selected += e.detail.steps;
+      if (selected > items.length - 1) selected = 0;
+      if (selected < 0) selected = items.length - 1;
+    }
+    let handleButton = e => {
+      navigator.vibrate([50])
+      let button = e.detail.button;
+      if (button === "click") {
+        if (isDefault) {
+          itemsStore = items;
+          items = selected === 4 ? ["Made by lxhom with Svelte & zingTouch", "URL: iPod.lxhom.codes", "Source: github.com/ lxhom/ipod-web", "Version: PB-58dee7+1"] : ["Not implemented"];
+          selected = 0;
+          isDefault = false;
+          console.log(items)
+        } else {
+          items = itemsStore;
+          isDefault = true
+        }
+      } else if (button === "playPause") {
+        playing = !playing
+      }
+    }
+</script>
 
 <div class="container centered">
     <div class="ipod">
         <div class="screen">
             <div class="title-bar">
                 <div class="title-container">
-                    <div class="player-icon"><i class="fas fa-play"></i></div>
+                    <div class="player-icon"><i class={"fas " + (playing ? "fa-pause" : "fa-play")}></i></div>
                     <div class="title centered">iPod</div>
                     <div class="battery small"></div>
                 </div>
             </div>
             <div class="menu-options">
-                <div class="option arr">Playlists</div>
-                <div class="option arr">Artists</div>
-                <div class="option arr selected">Songs</div>
-                <div class="option arr">Settings</div>
-                <div class="option arr">About</div>
-                <div class="option arr">Now Playing</div>
+                {#each items.map((v, i) => ({v, i})) as item}
+                    <div class="option arr" class:selected={selected === item.i}>{item.v}</div>
+                {/each}
             </div>
         </div>
-        <div class="outer-ring">
-            <!--
-            <svg viewBox="-150 5 350 350">
-                <path id="curve" d="m0,30 c16,-4 32,-4 48,0" />
-                <text>
-                    <textPath xlink:href="#curve">menu</textPath>
-                </text>
-            </svg>
-            <div class="skip forward"></div>
-            <div class="skip back"></div>
-            <div class="play-pause"></div>
-            <div class="touch-wheel">
-                <div class="center-button"></div>
-            </div>
-            -->
-        </div>
+        <Clickwheel on:wheel={handleWheel} on:button={handleButton} />
     </div>
 </div>

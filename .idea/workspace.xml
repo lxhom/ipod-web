@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="272dce6c-2375-4f2f-9fc9-d83b84336425" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webResources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/Chicago.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/build/bundle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/build/bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/build/bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fa/css/fontawesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fa/css/solid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fa/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fa/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fa/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fa/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/fa/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Clickwheel.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IPod.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/bundle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/bundle.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Clickwheel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clickwheel.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IPod.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPod.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +42,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ipod-web\docs" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -82,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1624552007823</updated>
-      <workItem from="1624552049645" duration="7144000" />
+      <workItem from="1624552049645" duration="20633000" />
     </task>
     <task id="LOCAL-00001" summary="Set up repo&#10;&#10;- GH Pages support&#10;- IntelliJ stuff committed&#10;- Package lock">
       <created>1624553235681</created>
@@ -91,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624553235681</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Started building the iPod UI in CSS&#10;&#10;See changes">
+      <created>1624561381950</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1624561381951</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +104,7 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Set up repo&#10;&#10;- GH Pages support&#10;- IntelliJ stuff committed&#10;- Package lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set up repo&#10;&#10;- GH Pages support&#10;- IntelliJ stuff committed&#10;- Package lock" />
+    <MESSAGE value="Started building the iPod UI in CSS&#10;&#10;See changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started building the iPod UI in CSS&#10;&#10;See changes" />
   </component>
 </project>
