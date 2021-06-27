@@ -164,7 +164,7 @@
       if (button === "click") {
         if (isDefault) {
           itemsStore = items;
-          items = selected === 4 ? ["Made by lxhom with Svelte & zingTouch", "URL: iPod.lxhom.codes", "Source: github.com/ lxhom/ipod-web", "Version: PB-58dee7+1"] : ["Not implemented"];
+          items = selected === 4 ? ["Made by lxhom with Svelte & zingTouch", "URL: iPod.lxhom.codes", "Source: github.com/ lxhom/ipod-web", "Version: PB-7a6a257b"] : ["Not implemented"];
           selected = 0;
           isDefault = false;
           console.log(items)

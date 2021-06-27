@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="272dce6c-2375-4f2f-9fc9-d83b84336425" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="272dce6c-2375-4f2f-9fc9-d83b84336425" name="Default Changelist" comment="Improved the clickwheel&#10;&#10;- Made the wheel not overflow &amp; go back in IPod.svelte&#10;- Added a minimal movement condition in Clickwheel.svelte to prevent accidental rotations">
       <change beforePath="$PROJECT_DIR$/docs/build/bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/build/bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/docs/build/bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Clickwheel.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Clickwheel.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IPod.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/IPod.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,8 +54,21 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ipod-web\docs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ipod-web\tmp" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -70,6 +81,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.dev" />
       </list>
     </recent_temporary>
@@ -84,7 +96,7 @@
       <updated>1624552007823</updated>
       <workItem from="1624552049645" duration="21257000" />
       <workItem from="1624623889322" duration="614000" />
-      <workItem from="1624723389344" duration="12510000" />
+      <workItem from="1624723389344" duration="13732000" />
     </task>
     <task id="LOCAL-00001" summary="Set up repo&#10;&#10;- GH Pages support&#10;- IntelliJ stuff committed&#10;- Package lock">
       <created>1624553235681</created>
@@ -107,11 +119,29 @@
       <option name="project" value="LOCAL" />
       <updated>1624596928333</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Improved the clickwheel&#10;&#10;- Made the wheel not overflow &amp; go back in IPod.svelte&#10;- Added a minimal movement condition in Clickwheel.svelte to prevent accidental rotations">
+      <created>1624798142564</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624798142564</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -120,6 +150,7 @@
     <MESSAGE value="Set up repo&#10;&#10;- GH Pages support&#10;- IntelliJ stuff committed&#10;- Package lock" />
     <MESSAGE value="Started building the iPod UI in CSS&#10;&#10;See changes" />
     <MESSAGE value="Wrote more iPod stuff&#10;&#10;see changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote more iPod stuff&#10;&#10;see changes" />
+    <MESSAGE value="Improved the clickwheel&#10;&#10;- Made the wheel not overflow &amp; go back in IPod.svelte&#10;- Added a minimal movement condition in Clickwheel.svelte to prevent accidental rotations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved the clickwheel&#10;&#10;- Made the wheel not overflow &amp; go back in IPod.svelte&#10;- Added a minimal movement condition in Clickwheel.svelte to prevent accidental rotations" />
   </component>
 </project>
