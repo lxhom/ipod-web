@@ -154,8 +154,9 @@
     let handleWheel = e => {
       navigator.vibrate([15])
       selected += e.detail.steps;
-      if (selected > items.length - 1) selected = 0;
-      if (selected < 0) selected = items.length - 1;
+      // Changed this out bc our fruity friend doesnt go back
+      if (selected > items.length - 1) selected = items.length - 1;
+      if (selected < 0) selected = 0;
     }
     let handleButton = e => {
       navigator.vibrate([50])

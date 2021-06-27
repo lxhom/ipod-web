@@ -34,16 +34,18 @@
     let rotateRegion = new ZingTouch.Region(wheel);
 
     let last = 0;
-    let lastRel = 0;
+    let movement = 0;
     rotateRegion.bind(wheel, 'rotate', e => {
       let dfo = e.detail.distanceFromOrigin
       if (dfo === 0) {
         last = 0;
       } else {
-        let rotation = Math.round((dfo-(10*lastRel))/angle);
-        if (rotation !== last) {
+        let rotation = (dfo > 0 ? Math.floor : Math.ceil)(dfo/angle);
+        movement += Math.abs(e.detail.distanceFromLast);
+        console.log(movement)
+        if (rotation !== last && movement > Math.min(angle, 30)) {
+          movement = 0;
           dispatch("wheel", {steps: rotation - last});
-
         }
         last = rotation
       }
